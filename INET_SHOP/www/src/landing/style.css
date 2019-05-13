@@ -1,0 +1,96 @@
+
+/* common */
+.container {
+    display: grid;
+    margin-top: 0;
+    font-family: Avenir;
+}
+
+/* header */
+.container.head {
+    background-color: silver;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /*height: 10vw;*/
+}
+.container p{
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    text-align: left;
+    margin-left: 1vw;
+    font-size: 1vw;
+    display: block;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+
+}
+
+.dropbutton {
+    color: azure;
+    background-color: inherit;
+    border: none;
+    font-size: 2vw;
+    max-height: inherit;
+
+}
+
+.content {
+    position: absolute;
+    background-color: darksalmon;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#backet {
+    display: block;
+    text-decoration: none;
+    align-self: center;
+    justify-self: end;
+}
+
+.content form {
+    display: block;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+
+.dropdown:hover{
+    background-color: cornflowerblue;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+#form1{
+    padding-bottom: 3vw;
+}
+#form1 input{
+    margin-bottom: 0.2vw;
+
+    max-width: 100px;
+}
+.categories{
+    background-color: lightgrey;
+    border: 2px outset cornflowerblue;
+    border-radius:4px;
+
+    margin-bottom: 0.5vw;
+    width: 6vw;
+    min-width: 100px;
+    margin-left: 1vw;
+
+}
+
+/*#gif {*/
+/*    display: none;*/
+/*}*/

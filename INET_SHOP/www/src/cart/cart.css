@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container.cart {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.2em;
+}
+
+.good {
+    background: white;
+    text-align: center;
+    border-spacing: inherit;
+    border-radius: 10px;
+    font-family: Avenir;
+}
+
+.good img {
+    width: 70%;
+    margin-top: 20px;
+
+}
+
+.checkout_table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.checkout_table td {
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+button{
+    margin-top: 10px;
+    height: 3vw;
+    width: 60%;
+   border-radius: 5vw;
+    font-size: 2vw;
+}

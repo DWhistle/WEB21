@@ -1,0 +1,67 @@
+
+main {
+    margin-top: 10px;
+}
+/*main*/
+.container.main {
+    width: 70%;
+    margin: auto;
+    padding: auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+.good {
+    background: whitesmoke;
+    text-align: center;
+    border: 1px inset red;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+
+.good img {
+    width: 70%;
+}
+
+.orders{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+}
+.orders td{
+
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+.orders-table{
+    border: 1px solid black;
+    margin: auto;
+    width: 50vw;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+.good button {
+   border: 2px solid darkgray;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+
+/*left*/
+
+/*.container.category {*/
+/*    width: 70%;*/
+/*    margin: auto;*/
+/*    padding: auto;*/
+
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    grid-gap: 2em;*/
+/*}*/
