@@ -1,0 +1,174 @@
+div .head-img{
+    height: 70%;
+    width: 27%;
+    
+    /* position: center; */
+    vertical-align: middle;
+    margin-top:1.5%;
+    margin-left: 1%;
+    margin-bottom: 100px;
+    
+    
+   
+}
+.reload{
+    margin-left: 54%;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: 0.5%;
+    position: absolute;
+}
+.close{
+    margin-left: 54%;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: 6%;
+    position: absolute;
+}
+.loopa{
+    margin-left: 39%;
+    width: 15%;
+    height: 8vw;
+    margin-top: 1.5%;
+    position: absolute;
+}
+div{  
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.left-corner{
+    /* display: inline-block; */
+    float:left;
+    width: 8vw;
+    height: 24vw;
+    margin-top: 1.5%;
+    margin-left: 20vw;
+    background-color:rgb(144, 144, 144);
+    border-radius: 0.5vw;
+    /* border:  0.6rem outset black; */
+    box-shadow: 0.4vw 0.7vw 0px 0px ;
+}
+
+.right-corner{
+    float:left;
+    width: 8vw;
+    height: 24vw;
+    margin-top: 1.5%;
+    margin-left: 2vw;
+    background-color:rgb(144, 144, 144);
+    border-radius: 0.5vw;
+    /* border:  0.6rem outset black; */
+    box-shadow: 0.4vw 0.7vw 0px 0px ;
+}
+.header-div{
+    display: block;
+    margin-left: 16vw;
+    width: 79vw;
+    height: 8vw;
+    margin-top: 1%;
+    background-color:rgb(144, 144, 144);
+    border-radius: 0.5vw;
+    /* border:  0.6rem outset black; */
+    box-shadow: 0.4vw 0.7vw 1px 1px ;
+}
+.pictures1{
+    margin-left: 25%;
+    width: 3.8vw;
+    height: 3.8vw;
+    margin-top: 4%;
+}
+.pictures2{
+    margin-left: 24%;
+    width: 4vw;
+    height: 4vw;
+}
+.divimage{
+    background-image: url(resources/brick.jpg);
+    width: 7vw;
+    height: 4vw;
+    margin-left: 7%;
+    background-size: 40% 40%;
+}
+.zoom{
+border:0.05vw solid rgb(144, 144, 144);
+}
+.zoom:hover{
+    border:0.3vw solid red; 
+    border-radius: 5px;  
+}
+.big-image{
+    float:left;
+    width: 51vw;
+    
+    margin-top: 1.5%;
+    margin-left: 2vw;
+    background-color:rgb(144, 144, 144);
+    border-radius: 0.5vw;
+    /* border:  0.6rem outset black; */
+    box-shadow: 0.4vw 0.7vw 0px 0px ;
+}
+.chat{
+    margin-left: 14vw;
+    width: 25vw;
+    height: 8vw;
+    background-color:rgb(41, 245, 85);
+    border-radius: 0.5vw;
+    margin-top: 27.5%;
+    position: absolute;
+    /* border:  0.6rem outset black; */
+    box-shadow: 0.4vw 0.7vw 1px 1px ;
+}
+
+.chat-text p{
+    margin-left: 0.5vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+
+.form{
+    float: left;
+    width: 73%;
+    height: 0.8vw;
+    margin-left: 2%;
+    border: 0.1vw inset lightgray;
+    background-color: white;
+}
+.button{
+    float: left;
+    width: 16%;
+ background-color: rgb(221, 218, 218);
+    border: 0.01vw outset lightgray;
+    margin-left: 3%;
+    font-size:0.7vw;
+    height: 1vw;
+}
+.button span{
+    margin:0.5vw;
+}
+#disconnect{
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    margin-top:-12vw;
+    margin-left: 76vw;
+}
+
+#linkikea{
+display: block;
+position: absolute;
+    width: 5vw;
+    height: 7vw;
+    margin-top:-12vw;
+    margin-left: 10vw;
+}
+#linkscreen{
+    position: absolute;
+    display: block;
+    width: 5vw;
+    height: 3vw;
+    margin-top:-13vw;
+    margin-left: 33vw;
+}

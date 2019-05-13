@@ -1,0 +1,66 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+    border-bottom: 200px;
+    table-layout: fixed;
+    
+}
+ .responsive td{
+    border: 3px solid white;
+    width: relative;
+    overflow: hidden;
+    height: relative;
+    
+}
+td .element{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    text-align: center;
+}
+td .number{
+    margin-left: 3px;
+    margin-top: 1px;
+    text-align: left;
+    font-size: 1vw;
+}
+td .weight{
+    text-align: right;
+    font-size: 1vw;
+    margin-right: 3px;
+}
+.tdoffset{
+    border: 0 !important;
+    border-color: white !important;
+}
+.non-metal{
+    background-color: grey;
+}
+.al-met{
+    background-color: orange;
+}
+.earth-met{
+    background-color: red;
+}
+.trans-met{
+    background-color: yellow;
+}
+.metal{
+    background-color: rgba(123, 185, 60, 0.863);
+}
+.metalloid{
+    background-color: green;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.noble-gas{
+    background-color: blue;
+}
+.lathanide{
+    background-color: darkslateblue;
+}
+.actinide{
+    background-color: palevioletred;
+}

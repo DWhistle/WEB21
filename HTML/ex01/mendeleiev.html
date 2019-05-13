@@ -1,0 +1,607 @@
+<html>
+    <head>
+        <title>Mendeleiev</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                height: 100%;
+                border-bottom: 200px;
+                table-layout: fixed;
+                
+            }
+             .responsive td{
+                border: 3px solid white;
+                width: relative;
+                overflow: hidden;
+                height: relative;
+                
+            }
+            td .element{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 2.5vw;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            td .number{
+                margin-left: 3px;
+                margin-top: 1px;
+                text-align: left;
+                font-size: 1vw;
+            }
+            td .weight{
+                text-align: right;
+                font-size: 1vw;
+                margin-right: 3px;
+            }
+            .tdoffset{
+                border: 0 !important;
+                border-color: white !important;
+            }
+            .non-metal{
+                background-color: grey;
+            }
+            .al-met{
+                background-color: orange;
+            }
+            .earth-met{
+                background-color: red;
+            }
+            .trans-met{
+                background-color: yellow;
+            }
+            .metal{
+                background-color: rgba(123, 185, 60, 0.863);
+            }
+            .metalloid{
+                background-color: green;
+            }
+            .lightblue{
+                background-color: lightblue;
+            }
+            .noble-gas{
+                background-color: blue;
+            }
+            .lathanide{
+                background-color: darkslateblue;
+            }
+            .actinide{
+                background-color: palevioletred;
+            }
+        </style>
+        <body>
+            <img style="margin:auto; display: block; width: 40%"src="https://cs.pikabu.ru/post_img/2013/10/04/5/1380866721_1424240140.png">
+            <table> 
+                <tr class="responsive">
+                        <td class="non-metal">
+                            <div class="number">1</div>
+                            <div class="element">H</div>
+                            <div class="weight">1.0079</div>
+                        </td>
+                        <td colspan="16" class="tdoffset">
+                        </td>
+                        <td class="noble-gas">
+                            <div class="number">2</div>
+                            <div class="element">He</div>
+                            <div class="weight">4.0026</div>
+                        </td>
+                    </tr>
+                    <tr class="responsive">
+                            <td class="al-met"><div class="number">3</div>
+                                <div class="element">Li</div>
+                                <div class="weight">6.941</div>
+                            </td>
+                            <td class="earth-met"><div class="number">4</div>
+                                <div class="element">Be</div>
+                                <div class="weight">9.022</div>
+                            </td>
+                                <td colspan="10" class="tdoffset">   
+                                </td>
+                                
+                                <td class="metal"><div class="number">5</div>
+                                    <div class="element">B</div>
+                                    <div class="weight">10.811</div>
+                                </td>
+                                <td class="non-metal"><div class="number">6</div>
+                                    <div class="element">H</div>
+                                    <div class="weight">1.0079</div>
+                                </td>
+                                <td class="non-metal"><div class="number">7</div>
+                                    <div class="element">C</div>
+                                    <div class="weight">12.011</div>
+                                </td>
+                                <td class="non-metal"><div class="number">8</div>
+                                    <div class="element">O</div>
+                                    <div class="weight">15.999</div>
+                                </td>
+                                <td class="lightblue"><div class="number">9</div>
+                                    <div class="element">F</div>
+                                    <div class="weight">18.998</div>
+                                </td>
+                                <td class="noble-gas"><div class="number">10</div>
+                                    <div class="element">Ne</div>
+                                    <div class="weight">20.1797</div>
+                                </td>
+                    </tr>
+                    <tr class="responsive">
+                            
+                        <td class="al-met"><div class="number">11</div>
+                                    <div class="element">Na</div>
+                                    <div class="weight">22.989</div>
+                                </td>
+                                
+                                <td class="earth-met"><div class="number">12</div>
+                                    <div class="element">Mg</div>
+                                    <div class="weight">24.305</div>
+                                </td>
+                                <td colspan="10" class="tdoffset">   
+                                    </td>
+                                <td class="metalloid"><div class="number">13</div>
+                                    <div class="element">Al</div>
+                                    <div class="weight">26.981</div>
+                                </td>
+                                <td class="metal"><div class="number">14</div>
+                                    <div class="element">Si</div>
+                                    <div class="weight">28.085</div>
+                                </td>
+                                <td class="non-metal"><div class="number">15</div>
+                                    <div class="element">P</div>
+                                    <div class="weight">30.974</div>
+                                </td>
+                                <td class="non-metal"><div class="number">16</div>
+                                    <div class="element">S</div>
+                                    <div class="weight">32.066</div>
+                                </td>
+                                <td class="lightblue"><div class="number">17</div>
+                                    <div class="element">Cl</div>
+                                    <div class="weight">35.453</div>
+                                </td>
+                                <td class="noble-gas">
+                                        <div class="number">18</div>
+                                        <div class="element">Ar</div>
+                                        <div class="weight">39.948</div>
+                                    </td>
+                    </tr>
+                    <tr class="responsive">
+                        
+                        
+                        <td class="al-met">
+                            <div class="number">19</div>
+                            <div class="element">K</div>
+                            <div class="weight">39.098</div>
+                        </td>
+                        <td class="earth-met">
+                            <div class="number">20</div>
+                            <div class="element">Ca</div>
+                            <div class="weight">40.078</div>
+                        </td>
+                        <td class="trans-met"><div class="number">21</div>
+                            <div class="element">Sc</div>
+                            <div class="weight">44.955</div>
+                        </td>
+                        <td class="trans-met"><div class="number">22</div>
+                            <div class="element">Ti</div>
+                            <div class="weight">1.0079</div>
+                        </td>
+                        <td class="trans-met"><div class="number">23</div>
+                            <div class="element">V</div>
+                            <div class="weight">50.942</div>
+                        </td>
+                        <td class="trans-met"><div class="number">24</div>
+                            <div class="element">Cr</div>
+                            <div class="weight">51.992</div>
+
+                            <td class="trans-met"><div class="number">25</div>
+                                <div class="element">Mn</div>
+                                <div class="weight">54.938</div>
+                            </td>
+                            <td class="trans-met"><div class="number">26</div>
+                                <div class="element">Fe</div>
+                                <div class="weight">55.845</div>
+                            </td>
+                            <td class="trans-met"><div class="number">27</div>
+                                <div class="element">Co</div>
+                                <div class="weight">58.933</div>
+                            </td>
+                            <td class="trans-met"><div class="number">28</div>
+                                <div class="element">Ni</div>
+                                <div class="weight">58.693</div>
+                                <td class="trans-met"><div class="number">29</div>
+                                    <div class="element">Cu</div>
+                                    <div class="weight">63.546</div>
+                                </td>
+                                <td class="trans-met"><div class="number">30</div>
+                                    <div class="element">Zn</div>
+                                    <div class="weight">65.38</div>
+                                </td>
+                                <td class="metalloid"><div class="number">31</div>
+                                    <div class="element">Ga</div>
+                                    <div class="weight">69.723</div>
+                                </td>
+                                <td class="metal"><div class="number">32</div>
+                                    <div class="element">Ge</div>
+                                    <div class="weight">72.63</div>
+                                </td>
+                                <td class="metal"><div class="number">33</div>
+                                    <div class="element">As</div>
+                                    <div class="weight">74.921</div>
+                                </td>
+                                <td class="non-metal"><div class="number">34</div>
+                                    <div class="element">Se</div>
+                                    <div class="weight">78.971</div>
+                                </td>
+                                <td class="lightblue"><div class="number">35</div>
+                                    <div class="element">Br</div>
+                                    <div class="weight">79.904</div>
+                                </td>
+                                <td class="noble-gas">
+                                        <div class="number">36</div>
+                                        <div class="element">Kr</div>
+                                        <div class="weight">83.798</div>
+                                    </td>
+                    </tr>
+                    <tr class="responsive">
+                            
+                            
+                        <td class="al-met">
+                                <div class="number">37</div>
+                                <div class="element">Rb</div>
+                                <div class="weight">85.457</div>
+                            </td>
+                            <td class="earth-met">
+                                <div class="number">38</div>
+                                <div class="element">Sr</div>
+                                <div class="weight">87.62</div>
+                            </td>
+                            <td class="trans-met"><div class="number">39</div>
+                                <div class="element">Y</div>
+                                <div class="weight">88.9058</div>
+                            </td>
+                            <td class="trans-met"><div class="number">40</div>
+                                <div class="element">Zr</div>
+                                <div class="weight">91.224</div>
+                            </td>
+                            <td class="trans-met"><div class="number">41</div>
+                                <div class="element">Nb</div>
+                                <div class="weight">Mo</div>
+                            </td>
+                            <td class="trans-met"><div class="number">42</div>
+                                <div class="element">Mo</div>
+                                <div class="weight">95.95</div>
+                                <td class="trans-met"><div class="number">43</div>
+                                    <div class="element">Tc</div>
+                                    <div class="weight">(98)</div>
+                                </td>
+                                <td class="trans-met"><div class="number">44</div>
+                                    <div class="element">Ru</div>
+                                    <div class="weight">101.07</div>
+                                </td>
+                                <td class="trans-met"><div class="number">45</div>
+                                    <div class="element">Rh</div>
+                                    <div class="weight">102.90</div>
+                                </td>
+                                <td class="trans-met"><div class="number">46</div>
+                                    <div class="element">Pd</div>
+                                    <div class="weight">106.42</div>
+                                    <td class="trans-met"><div class="number">47</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="trans-met"><div class="number">48</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="metalloid"><div class="number">49</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="metalloid"><div class="number">50</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="metal"><div class="number">51</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="metal"><div class="number">52</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="lightblue"><div class="number">53</div>
+                                        <div class="element">H</div>
+                                        <div class="weight">1.0079</div>
+                                    </td>
+                                    <td class="noble-gas">
+                                            <div class="number">54</div>
+                                            <div class="element">H</div>
+                                            <div class="weight">1.0079</div>
+                                        </td>
+                        </tr>
+                        <tr class="responsive">
+                                
+                                
+                            <td class="al-met">
+                                    <div class="number">55</div>
+                                    <div class="element">Cs</div>
+                                    <div class="weight">85.457</div>
+                                </td>
+                                <td class="earth-met">
+                                    <div class="number">56</div>
+                                    <div class="element">H</div>
+                                    <div class="weight">1.0079</div>
+                                </td>
+                                <td class="lathanide">
+                                </td>
+                                <td class="trans-met"><div class="number">72</div>
+                                    <div class="element">Hf</div>
+                                    <div class="weight">178.49</div>
+                                </td>
+                                <td class="trans-met"><div class="number">73</div>
+                                    <div class="element">Ta</div>
+                                    <div class="weight">180.94</div>
+                                </td>
+                                <td class="trans-met"><div class="number">74</div>
+                                    <div class="element">W</div>
+                                    <div class="weight">183.84</div>
+                                    <td class="trans-met"><div class="number">75</div>
+                                        <div class="element">Re</div>
+                                        <div class="weight">186.207</div>
+                                    </td>
+                                    <td class="trans-met"><div class="number">76</div>
+                                        <div class="element">Os</div>
+                                        <div class="weight">190.23</div>
+                                    </td>
+                                    <td class="trans-met"><div class="number">77</div>
+                                        <div class="element">Ir</div>
+                                        <div class="weight">192.217</div>
+                                    </td>
+                                    <td class="trans-met"><div class="number">78</div>
+                                        <div class="element">Pt</div>
+                                        <div class="weight">195.084</div>
+                                        <td class="trans-met"><div class="number">79</div>
+                                            <div class="element">Au</div>
+                                            <div class="weight">196.96</div>
+                                        </td>
+                                        <td class="trans-met"><div class="number">80</div>
+                                            <div class="element">Hg</div>
+                                            <div class="weight">200.59</div>
+                                        </td>
+                                        <td class="metalloid"><div class="number">81</div>
+                                            <div class="element">Tl</div>
+                                            <div class="weight">204.38</div>
+                                        </td>
+                                        <td class="metalloid"><div class="number">82</div>
+                                            <div class="element">Pb</div>
+                                            <div class="weight">207.2</div>
+                                        </td>
+                                        <td class="metalloid"><div class="number">83</div>
+                                            <div class="element">Bi</div>
+                                            <div class="weight">208.98</div>
+                                        </td>
+                                        <td class="metal"><div class="number">84</div>
+                                            <div class="element">Po</div>
+                                            <div class="weight">(209)</div>
+                                        </td>
+                                        <td class="lightblue"><div class="number">85</div>
+                                            <div class="element">At</div>
+                                            <div class="weight">(210)</div>
+                                        </td>
+                                        <td class="noble-gas">
+                                                <div class="number">86</div>
+                                                <div class="element">Rn</div>
+                                                <div class="weight">(222)</div>
+                                            </td>
+                            </tr>
+                            <tr class="responsive">
+                                    
+                                    
+                                <td class="al-met">
+                                        <div class="number">87</div>
+                                        <div class="element">Fr</div>
+                                        <div class="weight">(223)</div>
+                                    </td>
+                                    <td class="earth-met">
+                                        <div class="number">88</div>
+                                        <div class="element">Ra</div>
+                                        <div class="weight">(226)</div>
+                                    </td>
+                                    <td class="actinide">
+                                    </td>
+                                    <td class="trans-met"><div class="number">104</div>
+                                        <div class="element">Rf</div>
+                                        <div class="weight">(267)</div>
+                                    </td>
+                                    <td class="trans-met"><div class="number">105</div>
+                                        <div class="element">Db</div>
+                                        <div class="weight">(268)</div>
+                                    </td>
+                                    <td class="trans-met"><div class="number">106</div>
+                                        <div class="element">Sg</div>
+                                        <div class="weight">(271)</div>
+                                        <td class="trans-met"><div class="number">107</div>
+                                            <div class="element">Bh</div>
+                                            <div class="weight">(272)</div>
+                                        </td>
+                                        <td class="trans-met"><div class="number">108</div>
+                                            <div class="element">Hs</div>
+                                            <div class="weight">(270)</div>
+                                        </td>
+                                        <td class="trans-met"><div class="number">109</div>
+                                            <div class="element">Mt</div>
+                                            <div class="weight">(276)</div>
+                                        </td>
+                                        <td class="trans-met"><div class="number">110</div>
+                                            <div class="element">Ds</div>
+                                            <div class="weight">(281)</div>
+                                            <td class="trans-met"><div class="number">111</div>
+                                                <div class="element">Rg</div>
+                                                <div class="weight">(280)</div>
+                                            </td>
+                                            <td class="trans-met"><div class="number">112</div>
+                                                <div class="element">Cn</div>
+                                                <div class="weight">(285)</div>
+                                            </td>
+                                            <td class="metalloid"><div class="number">113</div>
+                                                <div class="element">Uut</div>
+                                                <div class="weight">(284)</div>
+                                            </td>
+                                            <td class="metalloid"><div class="number">114</div>
+                                                <div class="element">Fl</div>
+                                                <div class="weight">(289)</div>
+                                            </td>
+                                            <td class="metalloid"><div class="number">115</div>
+                                                <div class="element">Uup</div>
+                                                <div class="weight">(288)</div>
+                                            </td>
+                                            <td class="metalloid"><div class="number">116</div>
+                                                <div class="element">Lv</div>
+                                                <div class="weight">(293)</div>
+                                            </td>
+                                            <td class="lightblue"><div class="number">117</div>
+                                                <div class="element">Ts</div>
+                                                <div class="weight">(Unknown)</div>
+                                            </td>
+                                            <td class="noble-gas"><div class="number">118</div>
+                                                <div class="element">Og</div>
+                                                <div class="weight">Unknown</div>
+                                            </td>
+                                </tr>
+                                <tr style="height:10vw"></tr>
+                                <tr class="responsive">
+                                    
+                                    
+                                    
+                                        <td colspan="2">
+                                            
+                                        </td>
+                                        <td class="lathanide"><div class="number">57</div>
+                                            <div class="element">La</div>
+                                            <div class="weight">138.90</div>
+                                        </td>
+                                        <td class="lathanide"><div class="number">58</div>
+                                            <div class="element">Ce</div>
+                                            <div class="weight">140.116</div>
+                                        </td>
+                                        <td class="lathanide"><div class="number">59</div>
+                                            <div class="element">Pr</div>
+                                            <div class="weight">140.90</div>
+                                        </td>
+                                        <td class="lathanide"><div class="number">60</div>
+                                            <div class="element">Nd</div>
+                                            <div class="weight">144.242</div>
+                                            <td class="lathanide"><div class="number">61</div>
+                                                <div class="element">Pm</div>
+                                                <div class="weight">(145)</div>
+                                            </td>
+                                            <td class="lathanide"><div class="number">62</div>
+                                                <div class="element">Sm</div>
+                                                <div class="weight">150.36</div>
+                                            </td>
+                                            <td class="lathanide"><div class="number">63</div>
+                                                <div class="element">Eu</div>
+                                                <div class="weight">151.964</div>
+                                            </td>
+                                            <td class="lathanide"><div class="number">64</div>
+                                                <div class="element">Gd</div>
+                                                <div class="weight">157.25</div>
+                                                <td class="lathanide"><div class="number">65</div>
+                                                    <div class="element">Tb</div>
+                                                    <div class="weight">158.92</div>
+                                                </td>
+                                                <td class="lathanide"><div class="number">66</div>
+                                                    <div class="element">Dy</div>
+                                                    <div class="weight">162.500</div>
+                                                </td>
+                                                <td class="lathanide"><div class="number">67</div>
+                                                    <div class="element">Ho</div>
+                                                    <div class="weight">164.93</div>
+                                                </td>
+                                                <td class="lathanide"><div class="number">68</div>
+                                                    <div class="element">Er</div>
+                                                    <div class="weight">167.259</div>
+                                                </td>
+                                                <td class="lathanide"><div class="number">69</div>
+                                                    <div class="element">Tm</div>
+                                                    <div class="weight">168.93</div>
+                                                </td>
+                                                <td class="lathanide"><div class="number">70</div>
+                                                    <div class="element">Yb</div>
+                                                    <div class="weight">173.054</div>
+                                                </td>
+                                                <td class="lathanide"><div class="number">71</div>
+                                                    <div class="element">Lu</div>
+                                                    <div class="weight">174.9668</div>
+                                                </td>
+                                                <td>
+                                                </td>
+                                    </tr>
+                                    <tr class ="responsive">
+                                    <td colspan="2">
+                                            
+                                    </td>
+                                    <td class="actinide"><div class="number">89</div>
+                                        <div class="element">Ac</div>
+                                        <div class="weight">(227)</div>
+                                    </td>
+                                    <td class="actinide"><div class="number">90</div>
+                                        <div class="element">Th</div>
+                                        <div class="weight">232.0377</div>
+                                    </td>
+                                    <td class="actinide"><div class="number">91</div>
+                                        <div class="element">Pa</div>
+                                        <div class="weight">231.03</div>
+                                    </td>
+                                    <td class="actinide"><div class="number">92</div>
+                                        <div class="element">U</div>
+                                        <div class="weight">238.02</div>
+                                        <td class="actinide"><div class="number">93</div>
+                                            <div class="element">Np</div>
+                                            <div class="weight">(237)</div>
+                                        </td>
+                                        <td class="actinide"><div class="number">94</div>
+                                            <div class="element">Pu</div>
+                                            <div class="weight">(244)</div>
+                                        </td>
+                                        <td class="actinide"><div class="number">95</div>
+                                            <div class="element">Am</div>
+                                            <div class="weight">(243)</div>
+                                        </td>
+                                        <td class="actinide"><div class="number">96</div>
+                                            <div class="element">Cm</div>
+                                            <div class="weight">(247)</div>
+                                            <td class="actinide"><div class="number">97</div>
+                                                <div class="element">Bk</div>
+                                                <div class="weight">(247)</div>
+                                            </td>
+                                            <td class="actinide"><div class="number">98</div>
+                                                <div class="element">Cf</div>
+                                                <div class="weight">(251)</div>
+                                            </td>
+                                            <td class="actinide"><div class="number">99</div>
+                                                <div class="element">Es</div>
+                                                <div class="weight">(252)</div>
+                                            </td>
+                                            <td class="actinide"><div class="number">100</div>
+                                                <div class="element">Fm</div>
+                                                <div class="weight">(257)</div>
+                                            </td>
+                                            <td class="actinide"><div class="number">101</div>
+                                                <div class="element">Md</div>
+                                                <div class="weight">(258)</div>
+                                            </td>
+                                            <td class="actinide"><div class="number">102</div>
+                                                <div class="element">No</div>
+                                                <div class="weight">(259)</div>
+                                            </td>
+                                            <td class="actinide"><div class="number">103</div>
+                                                <div class="element">Lr</div>
+                                                <div class="weight">(262)</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                </tr>
+            </table>
+
+        </body>
+    </head>
+</html>

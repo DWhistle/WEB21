@@ -1,0 +1,36 @@
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: rgba(126, 105, 105, 50);
+    border-radius: 5px;
+    width: 15%;
+}
+
+   
+.menu a{
+display:block;
+padding: 10px;
+text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: gray;
+}
+.menu label{
+    background: linear-gradient(#e66465, #9198e5);
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    width: 4%;
+}
+input#check{
+    display:none;
+}
+.content{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+input:checked ~.content{
+    max-height: 100%;
+}

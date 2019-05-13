@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon</title>
+    <style>
+        #balloon{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 20% 20% 50% 50%
+        }
+    </style>
+    <script>
+        function fillWithAir() {
+            let size;
+            let balloon = document.getElementById("balloon");
+            if ((size = balloon.clientHeight) < 420) {
+                balloon.style.height = size + 10 + "px";
+                balloon.style.width = size + 10 + "px";
+            }
+            else
+            {
+                balloon.style.height = balloon.style.width = "200px";
+            }
+                //alert(window.getComputedStyle(balloon, null).getPropertyValue('background-color'));
+                if (window.getComputedStyle(balloon, null).getPropertyValue('background-color') == 'rgb(255, 0, 0)'){
+                    balloon.style.backgroundColor = "blue";
+                }
+                else if (window.getComputedStyle(balloon, null).getPropertyValue('background-color') == 'rgb(0, 0, 255)'){
+                    balloon.style.backgroundColor = "green";
+                }
+                else  {
+                    balloon.style.backgroundColor = "red";
+                }
+
+        }
+        function out(){
+            let balloon = document.getElementById("balloon");
+            let size;
+            if ((size = balloon.clientHeight) >= 205) {
+                balloon.style.height = size - 5 + "px";
+                balloon.style.width = size - 5 + "px";
+            }
+            if (window.getComputedStyle(balloon, null).getPropertyValue('background-color') == 'rgb(0, 255, 0)'){
+                balloon.style.backgroundColor = "blue";
+            }
+            else if (window.getComputedStyle(balloon, null).getPropertyValue('background-color') == 'rgb(0, 0, 255)'){
+                balloon.style.backgroundColor = "red";
+            }
+            else  {
+                balloon.style.backgroundColor = "green";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="balloon" onclick="fillWithAir()" onmouseout="out(  )">&nbsp</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <script>
+        function calc() {
+            let id = document.getElementById("calc").elements;
+            let text = {};
+            let first = parseInt(id[0].value);
+            let sign = id[1].value;
+            let second = parseInt(id[2].value);
+            if (first < 0 || second < 0 || !first || !second)
+            {
+                alert("Error :(");
+                return;
+            }
+            if (sign == '+') {
+                console.log(first + second);
+                alert(first + second);
+
+            }
+            if (sign == '-') {
+                console.log(first - second);
+                alert(first + second);
+
+            }
+            if (sign == '*') {
+                console.log(first * second);
+                alert(first + second);
+
+            }
+            if (sign == '/') {
+                if (second != 0) {
+                    console.log(first / second);
+                    alert(first + second);
+                }
+                else
+                {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                }
+
+            }
+            if (sign == '%') {
+                if (second != 0) {
+                    console.log(first % second);
+                    alert(first % second);
+                }
+                else
+                {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                }
+
+            }
+        }
+        function popup(){
+            alert('Please, use me...')
+        }
+        setInterval(popup, 1000 * 30);
+    </script>
+</head>
+<body>
+<form id ="calc">
+<input type="text" value="">
+<select>
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="%">%</option>
+    <option value="/">/</option>
+</select>
+<input type="text" value="">
+<input type="submit" value="Try me!" onclick="calc()">
+</form>
+</body>
+</html>
